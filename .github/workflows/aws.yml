@@ -6,13 +6,13 @@ on:
       - main
 
 env:
-  AWS_REGION: us-east-2
-  ECR_REPOSITORY: github-sample-1
-  ECS_SERVICE: github-sample-1
-  ECS_CLUSTER: github-sample-1
-  ECS_TASK_DEFINITION: .github/workflows/task-definition.json
-  CONTAINER_NAME: github-sample-1
-
+  AWS_REGION: MY_AWS_REGION                   
+  ECR_REPOSITORY: MY_ECR_REPOSITORY          
+  ECS_SERVICE: MY_ECS_SERVICE                 
+  ECS_CLUSTER: MY_ECS_CLUSTER                
+  ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION 
+                                              
+  CONTAINER_NAME: MY_CONTAINER_NAME
 jobs:
   deploy:
     name: Deploy
