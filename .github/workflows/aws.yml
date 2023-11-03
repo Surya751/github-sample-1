@@ -11,8 +11,8 @@ on:
   ECS_CLUSTER: ${{ secrets.ECS_CLUSTER }}
   ECS_TASK_DEFINITION: ${{ secrets.ECS_TASK_DEFINITION }}
   CONTAINER_NAME: ${{ secrets.CONTAINER_NAME }}
-                                              
-  CONTAINER_NAME: MY_CONTAINER_NAME
+
+                  
 jobs:
   deploy:
     name: Deploy
