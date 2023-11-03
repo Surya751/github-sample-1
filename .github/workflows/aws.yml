@@ -10,7 +10,7 @@ env:
   ECR_REPOSITORY: github-sample-1
   ECS_SERVICE: github-sample-1
   ECS_CLUSTER: github-sample-1
-  ECS_TASK_DEFINITION: github-sample-1
+  ECS_TASK_DEFINITION: .github/workflows/task-definition.json
   CONTAINER_NAME: github-sample-1
 
 jobs:
