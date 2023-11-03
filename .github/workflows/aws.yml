@@ -5,12 +5,12 @@ on:
     branches:
       - main
 
-env:
-  AWS_REGION: MY_AWS_REGION                   
-  ECR_REPOSITORY: MY_ECR_REPOSITORY          
-  ECS_SERVICE: MY_ECS_SERVICE                 
-  ECS_CLUSTER: MY_ECS_CLUSTER                
-  ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION 
+  AWS_REGION: ${{ secrets.AWS_REGION }}
+  ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
+  ECS_SERVICE: ${{ secrets.ECS_SERVICE }}
+  ECS_CLUSTER: ${{ secrets.ECS_CLUSTER }}
+  ECS_TASK_DEFINITION: ${{ secrets.ECS_TASK_DEFINITION }}
+  CONTAINER_NAME: ${{ secrets.CONTAINER_NAME }}
                                               
   CONTAINER_NAME: MY_CONTAINER_NAME
 jobs:
