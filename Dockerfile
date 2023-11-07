@@ -1,12 +1,8 @@
+FROM ubuntu
+WORKDIR github-sample-1
+RUN apt-get update
+RUN apt-get install apache2 -y
+RUN apt-get clean
+EXPOSE 80
+CMD ["apache2ctl","-D","FOREGROUND"]
 
-FROM node:14
-
-WORKDIR /usr/src/app
-
-COPY package.json .
-RUN npm install 
-COPY . .
-
-EXPOSE 3000
-
-CMD ["node", "index.js"]
